@@ -5,7 +5,7 @@ export const Anchor = ({ children, ...props }) => {
     <a {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         a {
           color: var(--action-color);
         }
@@ -20,7 +20,7 @@ export const Blockquote = ({ children, ...props }) => {
     <blockquote {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         blockquote {
           margin: calc(var(--spacing) * 3) 0;
           padding-left: calc(var(--spacing) * 3);
@@ -38,7 +38,7 @@ export const Button = ({ children, variant = 'normal', raised = false, ...props 
     <button type='text' {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         button {
           ${(variant === 'normal' && `
             --button-bg-color: var(--main-contrast-color);
@@ -109,7 +109,7 @@ export const Code = ({ children, ...props }) => {
     <code {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         code {
           background-color: var(--grey100);
         }
@@ -124,7 +124,7 @@ export const Heading1 = ({ children, ...props }) => {
     <h1 {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         h1 {
           font-family: var(--font-family-heading);
           font-size: 4.4em;
@@ -146,7 +146,7 @@ export const Heading2 = ({ children, ...props }) => {
     <h2 {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         h2 {
           font-family: var(--font-family-heading);
           font-size: 2.35em;
@@ -167,7 +167,7 @@ export const Heading3 = ({ children, ...props }) => {
     <h3 {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         h3 {
           font-family: var(--font-family-heading);
           font-size: 1.8em;
@@ -188,7 +188,7 @@ export const Heading4 = ({ children, ...props }) => {
     <h4 {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         h4 {
           font-family: var(--font-family-heading);
           font-size: 1.5em;
@@ -209,7 +209,7 @@ export const Heading5 = ({ children, ...props }) => {
     <h5 {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         h5 {
           font-family: var(--font-family-heading);
           font-size: 1.3em;
@@ -229,7 +229,7 @@ export const Heading6 = ({ children, ...props }) => {
     <h6 {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         h6 {
           font-family: var(--font-family-heading);
           font-size: 1.1em;
@@ -250,7 +250,7 @@ export const Hr = ({ ...props }) => {
     <>
       <hr {...props} />
       <style jsx>
-      {`
+        {`
         hr {
           margin: 60px 0 40px 0;
           border: none;    
@@ -276,7 +276,7 @@ export const Paragraph = ({ children, ...props }) => {
     <p {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         p {
           margin: calc(var(--spacing) * 3) 0;
           line-height: 1.65;
@@ -296,7 +296,7 @@ export const Pre = ({ children, border = false, ...props }) => {
     <pre {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         pre {
           margin: calc(var(--spacing) * 3) 0;
           padding: calc(var(--spacing) * 2);
@@ -321,7 +321,7 @@ export const List = ({ children, ...props }) => {
     <ul {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         ul {
           margin: calc(var(--spacing) * 2) 0;
         }
@@ -340,7 +340,7 @@ export const ListItem = ({ children, ...props }) => {
     <li {...props}>
       {children}
       <style jsx>
-      {`
+        {`
         li {
           list-style: none;
           margin: calc(var(--spacing) * 1);
@@ -358,7 +358,7 @@ export const Img = (props) => {
     <>
       <img {...props} />
       <style jsx>
-      {`
+        {`
         img {
           display: block;
           margin: auto;
