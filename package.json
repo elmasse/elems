@@ -6,19 +6,21 @@
   "files": [
     "dist",
     "index.js"
-  ],  
+  ],
   "scripts": {
     "test": "jest",
     "build": "taskr",
     "release": "taskr release",
     "prepublish": "npm run release",
-    "lint": "standard 'src/**/*.js'"
+    "lint": "standard 'src/**/*.js'",
+    "storybook": "start-storybook -p 6006 --ci",
+    "build-storybook": "build-storybook"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "styled-jsx": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
@@ -29,20 +31,30 @@
     "@babel/preset-react": "7.9.1",
     "@babel/runtime": "7.9.0",
     "@geut/chan": "^2.1.1",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
     "@taskr/babel": "1.1.0-next.2",
     "@taskr/clear": "1.1.0",
     "@taskr/esnext": "1.1.0",
     "@taskr/watch": "1.1.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.8.0",
+    "babel-loader": "^8.1.0",
     "eslint-config-standard": "^14.0.0",
     "jest": "^24.8.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "standard": "^14.3.1",
+    "styled-jsx": "^3.2.5",
     "taskr": "1.1.0",
-    "taskr-standard": "^1.2.0"
+    "taskr-standard": "^1.2.0",
+    "typeface-fira-code": "^1.1.4",
+    "typeface-lato": "0.0.75",
+    "typeface-open-sans": "0.0.75"
   },
   "standard": {
     "parser": "babel-eslint",
