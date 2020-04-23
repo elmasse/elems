@@ -8,9 +8,11 @@ import {
   Heading2,
   Heading3,
   Paragraph,
+  Blockquote,
   Anchor,
   Code,
   Divider,
+  Img,
   List,
   OrderedList,
   ListItem,
@@ -27,17 +29,30 @@ export default {
 export const Welcome = () => (
   <div className="layout">
     <Logo size="180px" className="logo"/>
+    <Blockquote>
+      <Paragraph>Components, not too many.</Paragraph>
+    </Blockquote>
     <Heading1>Welcome</Heading1>
     <Paragraph>
-      This is a welcome component that contains several components.
-      You will find <Code>Code Blocks like this.</Code>            
+      This is <Code>elems</Code>. A very small and opinionated set of React HTML elements for Blogs.
+      It is not a comprehensive set of UI components. Instead it is built for the need of styling simple 
+      components like when you are using a Markdown converter to render your posts. {" "}
+      <Code>elems</Code> contains a few React components, such as: <Code>Paragraph</Code>, <Code>Heading</Code>, <Code>Code</Code>, <Code>Dividers</Code>, <Code>Image</Code> and more.
     </Paragraph>
     <Divider />
+    <Heading2>Components</Heading2>
+    <Heading3>Paragraph</Heading3>
+    <Paragraph>
+      This is a Paragraph. That contains <Anchor>Links</Anchor>.
+    </Paragraph>
     <Paragraph className="no-margin">
       This is a Another Paragraph. That contains <Anchor>Links</Anchor> and a custom <Code>className="no-margin"</Code>
     </Paragraph>
-
-    <Heading2>Components</Heading2>
+    <Heading3>Image</Heading3>
+    <Img 
+      src="https://unsplash.com/photos/G-HRuwCTR7c/download"
+      alt="https://unsplash.com/@ryanquintal"
+    />
     <Heading3>Lists</Heading3>
     <List>
       <ListItem>List Items</ListItem>
@@ -54,10 +69,10 @@ export const Welcome = () => (
       .layout {
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+        max-width: 900px;
       }
-      .layout :global(.logo) {
-        margin: calc(var(--spacing) * 4);
-      }
+
       .layout :global(p.no-margin) {
         margin: 0;
       }
@@ -76,7 +91,6 @@ const Logo = ({ size = "90px", ...props }) => (
       font-family: 'Fira Code';
       line-height: 1em;
       letter-spacing: .2em;
-
     }
     div span {
       display: inline-block;
