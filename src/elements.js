@@ -1,23 +1,5 @@
 import React from 'react'
 
-export const Blockquote = ({ children, ...props }) => {
-  return (
-    <blockquote {...props}>
-      {children}
-      <style jsx>
-        {`
-        blockquote {
-          margin: calc(var(--spacing) * 3) 0;
-          padding-left: calc(var(--spacing) * 3);
-          border-left: calc(var(--spacing) * .5) solid var(--grey500);
-          background-color: var(--grey50);
-        }
-      `}
-      </style>
-    </blockquote>
-  )
-}
-
 export const Code = ({ children, ...props }) => {
   return (
     <code {...props}>
@@ -159,32 +141,6 @@ export const Heading6 = ({ children, ...props }) => {
   )
 }
 
-export const Hr = ({ ...props }) => {
-  return (
-    <>
-      <hr {...props} />
-      <style jsx>
-        {`
-        hr {
-          margin: 60px 0 40px 0;
-          border: none;    
-        }
-
-        hr:before {
-          content: "...";
-          text-align: center;
-          display: block;
-          letter-spacing: .6em;
-          font-weight: bold;
-        }
-      `}
-      </style>
-    </>
-  )
-}
-
-export const Divider = Hr
-
 export const Pre = ({ children, border = false, ...props }) => {
   return (
     <pre {...props}>
@@ -207,26 +163,5 @@ export const Pre = ({ children, border = false, ...props }) => {
       `}
       </style>
     </pre>
-  )
-}
-
-
-
-export const Img = (props) => {
-  return (
-    <>
-      <img {...props} />
-      <style jsx>
-        {`
-        img {
-          display: block;
-          margin: auto;
-          max-width: 100%;
-          height: auto;
-          box-shadow: 0 0 4px rgba(0,0,0, .16); 
-        }
-      `}
-      </style>
-    </>
   )
 }
