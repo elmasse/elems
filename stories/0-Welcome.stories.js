@@ -65,6 +65,13 @@ export const Welcome = () => (
         </OrderedList>
       </ListItem>
     </List>
+    <Heading3>Dividers</Heading3>
+    <Divider />
+    <Divider style={{
+      '--divider-content': '"..."'
+     }}/>
+
+
     <style jsx>{`
       .layout {
         display: flex;
