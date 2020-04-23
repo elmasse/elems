@@ -34,7 +34,7 @@ export const Welcome = () => (
     </Blockquote>
     <Heading1>Welcome</Heading1>
     <Paragraph>
-      This is <Code>elems</Code>. A very small and opinionated set of React HTML elements for Blogs.
+      This is <Logo size="32px" className="logo-inline"/>. A very small and opinionated set of React HTML elements for Blogs.
       It is not a comprehensive set of UI components. Instead it is built for the need of styling simple 
       components like when you are using a Markdown converter to render your posts. {" "}
       <Code>elems</Code> contains a few React components, such as: <Code>Paragraph</Code>, <Code>Heading</Code>, <Code>Code</Code>, <Code>Dividers</Code>, <Code>Image</Code> and more.
@@ -73,6 +73,10 @@ export const Welcome = () => (
         max-width: 900px;
       }
 
+      .layout :global(p .logo-inline) {
+        display: inline-block;
+      }
+
       .layout :global(p.no-margin) {
         margin: 0;
       }
@@ -82,17 +86,17 @@ export const Welcome = () => (
 
 const Logo = ({ size = "90px", ...props }) => (
   <div {...props}>
-    <span>E</span><span>le</span><br/>
-    <span>M</span>ent<br/>
-    <span>S</span>
+    <span className="color">E</span><span className="color">le</span><br/>
+    <span className="color">M</span><span className="neutral">ent</span><br/>
+    <span className="color">S</span>
     <style jsx>{`
-    div {        
+    div {
       font-size: calc(${size}/3);
       font-family: 'Fira Code';
       line-height: 1em;
       letter-spacing: .2em;
     }
-    div span {
+    div span.color {
       display: inline-block;
       background-color: var(--action-color);
       min-width: 1em;
@@ -100,8 +104,11 @@ const Logo = ({ size = "90px", ...props }) => (
       font-weight: 700;
       text-align: center;
     }
-    div span:nth-child(2) {
+    div span.color:nth-child(2) {
       margin-left: -0.1em;
+    }
+
+    div span.neutral {
     }
   `}</style>      
   </div>

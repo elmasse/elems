@@ -1,6 +1,5 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
-import { withKnobs, color, boolean, text } from "@storybook/addon-knobs";
+import { withKnobs } from "@storybook/addon-knobs";
 
 import { withCSSVars } from './decorators'
 import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6 } from '../src';
