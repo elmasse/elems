@@ -19,4 +19,4 @@ export const Img = (props) => {
   )
 }
 
-export const Image = Img;
+export const Image = Img

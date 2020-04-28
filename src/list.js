@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const List = ({ children , ...props }) => {
+export const List = ({ children, ...props }) => {
   return (
     <ul {...props}>
       {children}
@@ -22,7 +22,7 @@ export const List = ({ children , ...props }) => {
 
 export const UL = List
 
-export const OrderedList = ({ children , ...props }) => {
+export const OrderedList = ({ children, ...props }) => {
   return (
     <ol {...props}>
       {children}

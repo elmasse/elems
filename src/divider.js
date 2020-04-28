@@ -12,7 +12,7 @@ export const Hr = ({ ...props }) => {
         }
 
         hr:before {
-          content: var(--divider-content, "${"\u2022\u2022\u2022"}");
+          content: var(--divider-content, '${'\u2022\u2022\u2022'}');
           color: var(--main-color);
           text-align: center;
           display: block;

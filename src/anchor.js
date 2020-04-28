@@ -15,4 +15,4 @@ export const Anchor = ({ children, ...props }) => {
   )
 }
 
-export const A = Anchor;
+export const A = Anchor
