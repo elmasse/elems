@@ -1,7 +1,7 @@
 {
   "name": "elems",
   "version": "0.0.0",
-  "description": "",
+  "description": "Elements as React Components, not too many.",
   "main": "index.js",
   "files": [
     "dist",
@@ -15,7 +15,8 @@
     "lint": "standard 'src/**/*.js'",
     "storybook": "start-storybook -p 6006 --ci",
     "build-storybook": "build-storybook -c .storybook -o out",
-    "now-build": "npm run build-storybook"
+    "now-build": "npm run build-storybook",
+    "version": "chan release ${npm_package_version} && git add ."
   },
   "dependencies": {},
   "peerDependencies": {
