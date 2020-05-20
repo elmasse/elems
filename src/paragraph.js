@@ -9,7 +9,7 @@ export const Paragraph = ({ children, ...props }) => {
         p {
           margin: calc(var(--spacing) * 3) 0;
           line-height: 1.65;
-          letter-spacing: -0.003em;
+          letter-spacing: -0.003rem;
           font-family: var(--font-family-body);
           font-weight: 400;
           font-size: 1.25rem;

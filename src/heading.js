@@ -8,12 +8,12 @@ export const Heading1 = ({ children, ...props }) => {
         {`
         h1 {
           font-family: var(--font-family-heading);
-          font-size: 4.4em;
+          font-size: 4.4rem;
           color: var(--main-color);
           margin-left: calc(var(--spacing) * -0.5);
           margin-bottom: calc(var(--spacing) * 4);
           margin-top: calc(var(--spacing) * 4);
-          line-height: .95em;
+          line-height: .95rem;
           letter-spacing: -.9px;
         }
       `}
