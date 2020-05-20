@@ -5,7 +5,7 @@ export const List = ({ children, ...props }) => {
     <ul {...props}>
       {children}
       <style jsx>{`
-        ul {        
+        ul {
           font-family: var(--font-family-body);
           margin: calc(var(--spacing) * 2) 0;
         }

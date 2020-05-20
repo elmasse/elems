@@ -1,20 +1,5 @@
 import React from 'react'
 
-export const Code = ({ children, ...props }) => {
-  return (
-    <code {...props}>
-      {children}
-      <style jsx>
-        {`
-        code {
-          background-color: var(--grey100);
-        }
-      `}
-      </style>
-    </code>
-  )
-}
-
 export const Heading1 = ({ children, ...props }) => {
   return (
     <h1 {...props}>
@@ -37,6 +22,8 @@ export const Heading1 = ({ children, ...props }) => {
   )
 }
 
+export const H1 = Heading1
+
 export const Heading2 = ({ children, ...props }) => {
   return (
     <h2 {...props}>
@@ -57,6 +44,8 @@ export const Heading2 = ({ children, ...props }) => {
     </h2>
   )
 }
+
+export const H2 = Heading2
 
 export const Heading3 = ({ children, ...props }) => {
   return (
@@ -79,6 +68,8 @@ export const Heading3 = ({ children, ...props }) => {
   )
 }
 
+export const H3 = Heading3
+
 export const Heading4 = ({ children, ...props }) => {
   return (
     <h4 {...props}>
@@ -100,6 +91,8 @@ export const Heading4 = ({ children, ...props }) => {
   )
 }
 
+export const H4 = Heading4
+
 export const Heading5 = ({ children, ...props }) => {
   return (
     <h5 {...props}>
@@ -120,6 +113,9 @@ export const Heading5 = ({ children, ...props }) => {
     </h5>
   )
 }
+
+export const H5 = Heading5
+
 export const Heading6 = ({ children, ...props }) => {
   return (
     <h6 {...props}>
@@ -141,27 +137,4 @@ export const Heading6 = ({ children, ...props }) => {
   )
 }
 
-export const Pre = ({ children, border = false, ...props }) => {
-  return (
-    <pre {...props}>
-      {children}
-      <style jsx>
-        {`
-        pre {
-          margin: calc(var(--spacing) * 3) 0;
-          padding: calc(var(--spacing) * 2);
-          border: ${border ? '1px solid var(--main-color)' : '0px'};
-          ${!border && 'border-radius: 0px;'}
-          overflow: auto;
-          line-height: 1;
-          font-size: .9em;
-        }
-
-        pre :global(code) {
-          background-color: transparent;
-        }
-      `}
-      </style>
-    </pre>
-  )
-}
+export const H6 = Heading6

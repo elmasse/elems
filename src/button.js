@@ -24,7 +24,6 @@ export const Button = ({ children, variant = 'normal', raised = false, ...props 
             box-shadow: 0 5px 10px rgba(0,0,0,.16);
           `) || ''}
 
-
           display: flex;
           align-items: center;
           justify-content: center;
