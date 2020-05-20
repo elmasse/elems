@@ -91,19 +91,19 @@ export const Welcome = () => (
   </div>
 );
 
-const Logo = ({ size = "90px", ...props }) => (
-  <div {...props}>
+const Logo = ({ size = "90px", className, ...props }) => (
+  <span className={[className, 'logo'].join(' ')} {...props}>
     <span className="color">E</span><span className="color">le</span><br/>
     <span className="color">M</span><span className="neutral">ent</span><br/>
     <span className="color">S</span>
     <style jsx>{`
-    div {
+    .logo {
       font-size: calc(${size}/3);
       font-family: 'Fira Code';
       line-height: 1em;
       letter-spacing: .2em;
     }
-    div span.color {
+    .logo span.color {
       display: inline-block;
       background-color: var(--action-color);
       min-width: 1em;
@@ -111,12 +111,12 @@ const Logo = ({ size = "90px", ...props }) => (
       font-weight: 700;
       text-align: center;
     }
-    div span.color:nth-child(2) {
+    .logo span.color:nth-child(2) {
       margin-left: -0.1em;
     }
 
-    div span.neutral {
+    .logo span.neutral {
     }
   `}</style>      
-  </div>
+  </span>
 )
