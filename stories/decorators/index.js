@@ -29,6 +29,12 @@ export const withCSSVars = (story) => (
         --grey800: #212121;
         --grey900: #181818; 
       }     
+    `}</style>      
+    <style jsx>{`
+      div {
+        display: flex;
+        flex-direction: column;
+      }
     `}</style>
     {story()}
   </div>
