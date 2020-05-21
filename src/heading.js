@@ -9,12 +9,11 @@ export const Heading1 = ({ children, ...props }) => {
         h1 {
           font-family: var(--font-family-heading);
           font-size: 4.4rem;
+          letter-spacing: -.088rem;
           color: var(--main-color);
           margin-left: calc(var(--spacing) * -0.5);
           margin-bottom: calc(var(--spacing) * 4);
           margin-top: calc(var(--spacing) * 4);
-          line-height: .95rem;
-          letter-spacing: -.9px;
         }
       `}
       </style>
@@ -32,12 +31,12 @@ export const Heading2 = ({ children, ...props }) => {
         {`
         h2 {
           font-family: var(--font-family-heading);
-          font-size: 2.35em;
+          font-size: 2.4rem;
+          letter-spacing: -.048rem;
           color: var(--main-color);          
           margin-left: calc(var(--spacing) * -0.5);
           margin-bottom: calc(var(--spacing) * 3);
           margin-top: calc(var(--spacing) * 5);
-          letter-spacing: -.95px;
         }
       `}
       </style>
@@ -55,12 +54,12 @@ export const Heading3 = ({ children, ...props }) => {
         {`
         h3 {
           font-family: var(--font-family-heading);
-          font-size: 1.8em;
+          font-size: 1.8rem;
+          letter-spacing: -.036rem;
           color: var(--main-color);
           margin-left: calc(var(--spacing) * -0.5);
           margin-bottom: calc(var(--spacing) * 2.5);
           margin-top: calc(var(--spacing) * 4);
-          letter-spacing: -.95px;
         }
       `}
       </style>
@@ -78,12 +77,12 @@ export const Heading4 = ({ children, ...props }) => {
         {`
         h4 {
           font-family: var(--font-family-heading);
-          font-size: 1.5em;
+          font-size: 1.5rem;
+          letter-spacing: -.03rem;
           color: var(--main-color);
           margin-left: calc(var(--spacing) * -0.5);
           margin-bottom: calc(var(--spacing) * 2);
           margin-top: calc(var(--spacing) * 3);
-          letter-spacing: -.95px;
         }
       `}
       </style>
@@ -101,12 +100,11 @@ export const Heading5 = ({ children, ...props }) => {
         {`
         h5 {
           font-family: var(--font-family-heading);
-          font-size: 1.3em;
+          font-size: 1.3rem;
           color: var(--main-color);
           margin-left: calc(var(--spacing) * -0.5);
           margin-bottom: calc(var(--spacing) * 2);
           margin-top: calc(var(--spacing) * 3);
-          letter-spacing: -.5px;
         }
       `}
       </style>
@@ -124,12 +122,11 @@ export const Heading6 = ({ children, ...props }) => {
         {`
         h6 {
           font-family: var(--font-family-heading);
-          font-size: 1.1em;
+          font-size: 1.1rem;
           color: var(--main-color);
           margin-left: calc(var(--spacing) * -0.5);
           margin-bottom: calc(var(--spacing) * 2);
           margin-top: calc(var(--spacing) * 3);
-          letter-spacing: -.5px;
         }
       `}
       </style>
