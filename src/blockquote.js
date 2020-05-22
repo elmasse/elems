@@ -9,7 +9,7 @@ export const Blockquote = ({ children, ...props }) => {
         blockquote {
           margin: calc(var(--spacing) * 3) 0;
           padding-left: calc(var(--spacing) * 3);
-          border-left: calc(var(--spacing) * .5) solid var(--grey500);
+          border-left: calc(var(--spacing) / 2) solid var(--grey500);
           background-color: var(--grey50);
         }
       `}

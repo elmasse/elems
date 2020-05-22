@@ -1,5 +1,9 @@
 import React from 'react'
 
+const reset = 'margin: 0;'
+const fontFamily = 'font-family: var(--font-family-heading);'
+const color = 'color: var(--main-color);'
+
 export const Heading1 = ({ children, ...props }) => {
   return (
     <h1 {...props}>
@@ -7,13 +11,12 @@ export const Heading1 = ({ children, ...props }) => {
       <style jsx>
         {`
         h1 {
-          font-family: var(--font-family-heading);
+          ${reset}
+          ${fontFamily}
+          ${color}
           font-size: 4.4rem;
           letter-spacing: -.088rem;
-          color: var(--main-color);
-          margin-left: calc(var(--spacing) * -0.5);
-          margin-bottom: calc(var(--spacing) * 4);
-          margin-top: calc(var(--spacing) * 4);
+          margin-left: calc(var(--spacing) * -0.3);
         }
       `}
       </style>
@@ -30,13 +33,11 @@ export const Heading2 = ({ children, ...props }) => {
       <style jsx>
         {`
         h2 {
-          font-family: var(--font-family-heading);
+          ${reset}
+          ${fontFamily}
+          ${color}
           font-size: 2.4rem;
           letter-spacing: -.048rem;
-          color: var(--main-color);          
-          margin-left: calc(var(--spacing) * -0.5);
-          margin-bottom: calc(var(--spacing) * 3);
-          margin-top: calc(var(--spacing) * 5);
         }
       `}
       </style>
@@ -53,13 +54,11 @@ export const Heading3 = ({ children, ...props }) => {
       <style jsx>
         {`
         h3 {
-          font-family: var(--font-family-heading);
+          ${reset}
+          ${fontFamily}
+          ${color}
           font-size: 1.8rem;
           letter-spacing: -.036rem;
-          color: var(--main-color);
-          margin-left: calc(var(--spacing) * -0.5);
-          margin-bottom: calc(var(--spacing) * 2.5);
-          margin-top: calc(var(--spacing) * 4);
         }
       `}
       </style>
@@ -76,13 +75,11 @@ export const Heading4 = ({ children, ...props }) => {
       <style jsx>
         {`
         h4 {
-          font-family: var(--font-family-heading);
+          ${reset}
+          ${fontFamily}
+          ${color}
           font-size: 1.5rem;
           letter-spacing: -.03rem;
-          color: var(--main-color);
-          margin-left: calc(var(--spacing) * -0.5);
-          margin-bottom: calc(var(--spacing) * 2);
-          margin-top: calc(var(--spacing) * 3);
         }
       `}
       </style>
@@ -99,12 +96,10 @@ export const Heading5 = ({ children, ...props }) => {
       <style jsx>
         {`
         h5 {
-          font-family: var(--font-family-heading);
+          ${reset}
+          ${fontFamily}
+          ${color}
           font-size: 1.3rem;
-          color: var(--main-color);
-          margin-left: calc(var(--spacing) * -0.5);
-          margin-bottom: calc(var(--spacing) * 2);
-          margin-top: calc(var(--spacing) * 3);
         }
       `}
       </style>
@@ -121,12 +116,10 @@ export const Heading6 = ({ children, ...props }) => {
       <style jsx>
         {`
         h6 {
-          font-family: var(--font-family-heading);
+          ${reset}
+          ${fontFamily}
+          ${color}
           font-size: 1.1rem;
-          color: var(--main-color);
-          margin-left: calc(var(--spacing) * -0.5);
-          margin-bottom: calc(var(--spacing) * 2);
-          margin-top: calc(var(--spacing) * 3);
         }
       `}
       </style>

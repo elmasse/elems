@@ -1,19 +1,18 @@
 import React from 'react';
 import { withKnobs } from "@storybook/addon-knobs";
 
-import { withCSSVars } from './decorators'
-import { List, OrderedList, ListItem, Button, Anchor } from '../src';
+import { withCSSVars, withPostLayout } from './decorators'
+import { List, OrderedList, ListItem, Anchor } from '../src';
 
 export default {
   title: 'Lists',
   component: Lists,
-  decorators: [withKnobs, withCSSVars]
+  decorators: [withKnobs, withCSSVars, withPostLayout]
 };
 
 export const Lists = () => (
   <List>
     <ListItem>List Items</ListItem>
-    <ListItem><Button variant="highlight">highlight button</Button></ListItem>
     <ListItem><Anchor>Links</Anchor></ListItem>
     <ListItem> Inset List
       <List>

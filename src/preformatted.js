@@ -13,7 +13,7 @@ export const Preformatted = ({ children, border = false, ...props }) => {
           ${!border && 'border-radius: 0px;'}
           overflow: auto;
           line-height: 1;
-          font-size: .9em;
+          font-size: 1rem;
         }
 
         pre :global(code) {

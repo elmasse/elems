@@ -1,7 +1,6 @@
 
 export * from './anchor'
 export * from './blockquote'
-export * from './button'
 export * from './code'
 export * from './divider'
 export * from './heading'

@@ -12,11 +12,11 @@ export const Hr = ({ ...props }) => {
         }
 
         hr:before {
-          content: var(--divider-content, '${'\u2022\u2022\u2022'}');
+          content: var(--divider-content, "•••");
           color: var(--main-color);
           text-align: center;
           display: block;
-          letter-spacing: var(--divider-letter-spacing, .6em);
+          letter-spacing: var(--divider-letter-spacing, .6rem);
         }
       `}
       </style>

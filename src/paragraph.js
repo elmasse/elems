@@ -1,5 +1,7 @@
 import React from 'react'
 
+const reset = 'margin: 0;'
+
 export const Paragraph = ({ children, ...props }) => {
   return (
     <p {...props}>
@@ -7,12 +9,12 @@ export const Paragraph = ({ children, ...props }) => {
       <style jsx>
         {`
         p {
-          margin: calc(var(--spacing) * 3) 0;
+          ${reset}
           line-height: 1.65;
           letter-spacing: -0.003rem;
           font-family: var(--font-family-body);
           font-weight: 400;
-          font-size: 1.25rem;
+          font-size: 1rem;
           color: var(--main-color);
         }
       `}
@@ -20,3 +22,5 @@ export const Paragraph = ({ children, ...props }) => {
     </p>
   )
 }
+
+export const P = Paragraph;

@@ -2,13 +2,13 @@ import React from 'react';
 import { withKnobs } from "@storybook/addon-knobs";
 
 
-import { withCSSVars } from './decorators';
+import { withCSSVars, withPostLayout } from './decorators';
 import { Paragraph, Anchor, Code } from '../src';
 
 export default {
   title: 'Paragraph',
   component: Paragraph,
-  decorators: [withKnobs, withCSSVars]
+  decorators: [withKnobs, withCSSVars, withPostLayout]
 };
 
 export const Text = () => (
