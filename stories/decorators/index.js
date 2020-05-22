@@ -8,16 +8,16 @@ export const withCSSVars = (story) => (
   <div className="story-with-css">
     <style jsx global>{`
       :root {
-        --font-base: ${number('--font-base', 16, {}, 'CSS Vars')}px;
+        --font-base: ${number('--font-base', 16, {}, 'Rhythm')}px;
         font-size: var(--font-base);
-        --font-family-heading: ${text('--font-family-heading', 'Lato', 'CSS Vars')};
-        --font-family-body: ${text('--font-family-body','Open Sans', 'CSS Vars')};
+        --font-family-heading: ${text('--font-family-heading', 'Lato', 'Font')};
+        --font-family-body: ${text('--font-family-body','Open Sans', 'Font')};
           
-        --spacing: ${number('--spacing', 8, {}, 'CSS Vars')}px;
+        --spacing: ${number('--spacing', 8, {}, 'Rhythm')}px;
     
-        --main-color: ${color('--main-color', '#181818', 'CSS Vars')};
-        --action-color: ${color('--action-color', '#f63', 'CSS Vars')};
-        --divider-content: "${text('--divider-content', '•••', 'CSS Vars')}";
+        --main-color: ${color('--main-color', '#181818', 'Color')};
+        --action-color: ${color('--action-color', '#f63', 'Color')};
+        --divider-content: "${text('--divider-content', '•••', 'Misc')}";
         --grey50: #fafafa;
         --grey100: #f0f0f0;
         --grey200: #e4e4e4;
