@@ -2,6 +2,10 @@ import React from 'react'
 
 const reset = 'margin: 0;'
 
+// Base ratio
+// base line-height / base font-size
+// 
+
 export const Paragraph = ({ children, ...props }) => {
   return (
     <p {...props}>
@@ -10,7 +14,7 @@ export const Paragraph = ({ children, ...props }) => {
         {`
         p {
           ${reset}
-          line-height: 1.65;
+          line-height: 1.523rem;
           letter-spacing: -0.003rem;
           font-family: var(--font-family-body);
           font-weight: 400;

@@ -4,6 +4,10 @@ const reset = 'margin: 0;'
 const fontFamily = 'font-family: var(--font-family-heading);'
 const color = 'color: var(--main-color);'
 
+// Base ratio
+// base line-height / base font-size
+// 
+
 export const Heading1 = ({ children, ...props }) => {
   return (
     <h1 {...props}>
@@ -14,7 +18,8 @@ export const Heading1 = ({ children, ...props }) => {
           ${reset}
           ${fontFamily}
           ${color}
-          font-size: 4.4rem;
+          font-size: 4rem;
+          line-height: 6rem;
           letter-spacing: -.088rem;
           margin-left: calc(var(--spacing) * -0.3);
         }
@@ -36,7 +41,8 @@ export const Heading2 = ({ children, ...props }) => {
           ${reset}
           ${fontFamily}
           ${color}
-          font-size: 2.4rem;
+          font-size: 3rem;
+          line-height: 4.5rem;
           letter-spacing: -.048rem;
         }
       `}
@@ -57,7 +63,8 @@ export const Heading3 = ({ children, ...props }) => {
           ${reset}
           ${fontFamily}
           ${color}
-          font-size: 1.8rem;
+          font-size: 2rem;
+          line-height: 3rem;
           letter-spacing: -.036rem;
         }
       `}
@@ -78,7 +85,7 @@ export const Heading4 = ({ children, ...props }) => {
           ${reset}
           ${fontFamily}
           ${color}
-          font-size: 1.5rem;
+          font-size: 1.8rem;
           letter-spacing: -.03rem;
         }
       `}
