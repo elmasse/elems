@@ -1,9 +1,9 @@
 import React from 'react'
 
 export default ({ spacing, gridColor, show, children }) => {
-  return (
+  return show  ? (
     <div className='story-with-vertical-rhythm-grid root'>
-      {show && <svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'>
+      <svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'>
         <defs>
           <pattern id='smallGrid' width={spacing} height={spacing} patternUnits='userSpaceOnUse'>
             <path d={`M ${spacing} 0 L 0 0 0 ${spacing}`} fill='none' stroke={gridColor} strokeWidth='0.5' />
@@ -14,19 +14,26 @@ export default ({ spacing, gridColor, show, children }) => {
           </pattern>
         </defs>
         <rect width='100%' height='100%' fill='url(#grid)' />
-      </svg>}
+      </svg>
+      {children}
       <style jsx>{`
         div.root {
           position: relative;
         }
-
+        
         svg {
           position: absolute;
           opacity: .8;
         }
-      `}
-      </style>
-      {children}
+        // :global(h1),
+        // :global(h2),
+        // :global(h3),
+        // :global(h4),
+        // :global(h5),
+        // :global(h6) { background-color: rgba(0,0,255, .1); }
+
+        // :global(p) { background-color: rgba(0,0,0, .1); }
+      `}</style>
     </div>
-  )
+  ) : children
 }

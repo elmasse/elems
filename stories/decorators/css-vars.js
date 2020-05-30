@@ -7,16 +7,16 @@ import 'typeface-open-sans'
 import OverlayGrid from '../components/overlay-grid'
 
 export const withCSSVars = (story) => {
-  const spacing = number('--spacing', 8, {}, 'Rhythm')
   const overlayShow = boolean('Show Overlay', true, 'Rhythm')
   const overlayColor = color('Overlay Grid', '#e4e4e4', 'Rhythm')
+  const spacing = number('--spacing', 8, {}, 'Rhythm')
 
   return (
     <div className='story-with-css'>
       <style jsx global>{`
         :root {
-          --font-base: ${number('--font-base', 16, {}, 'Rhythm')}px;
-          font-size: var(--font-base);
+          --base-font-size: ${number('--base-font-size', 16, {}, 'Rhythm')}px;
+          --base-line-height: ${number('--base-line-height', 1.5, {}, 'Rhythm')};
           --font-family-heading: ${text('--font-family-heading', 'Lato', 'Font')};
           --font-family-body: ${text('--font-family-body', 'Open Sans', 'Font')};
 
@@ -35,6 +35,8 @@ export const withCSSVars = (story) => {
           --grey700: #424242;
           --grey800: #212121;
           --grey900: #181818;
+
+          font-size: var(--base-font-size);
         }
         body {
           margin: 0;
