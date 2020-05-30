@@ -31,7 +31,7 @@ import { withCSSVars, withPostLayout } from './decorators'
 export default {
   title: 'Welcome',
   component: Welcome,
-  decorators: [withKnobs, withCSSVars, withPostLayout]
+  decorators: [withPostLayout,  withCSSVars, withKnobs]
 };
 
 export const Welcome = () => (
@@ -42,7 +42,7 @@ export const Welcome = () => (
     </Blockquote>
     <Heading1>Welcome</Heading1>
     <Paragraph>
-      This is <Logo size="32px" inline/>. A very small and opinionated set of React HTML elements for Blogs.
+      This is <Code>elems</Code>. A very small and opinionated set of React HTML elements for Blogs.
       It is not a comprehensive set of UI components. Instead it is built for the need of styling simple 
       components like when you are using a Markdown converter to render your posts. {" "}
       <Code>elems</Code> contains a few React components, such as: <Code>Paragraph</Code>, <Code>Heading</Code>, <Code>Code</Code>, <Code>Dividers</Code>, <Code>Image</Code> and a few more.
