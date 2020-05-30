@@ -2,13 +2,13 @@ import React from 'react'
 
 export const Logo = ({ size = '90px', className, inline = false, ...props }) => (
   <span className={[className, 'logo'].join(' ')} {...props}>
-    <span className="color">E</span><span className="color">le</span><br/>
-    <span className="color">M</span><span className="neutral">ent</span><br/>
-    <span className="color">S</span>
+    <span className='color'>E</span><span className='color'>le</span><br />
+    <span className='color'>M</span><span className='neutral'>ent</span><br />
+    <span className='color'>S</span>
     <style jsx>{`
     --size: calc(${size}/3);
     .logo {
-      display: ${inline ? 'inline-block': 'block'};
+      display: ${inline ? 'inline-block' : 'block'};
       font-size: var(--size);
       font-family: 'Fira Code';
       letter-spacing: calc(var(--size) * .2);
@@ -29,6 +29,6 @@ export const Logo = ({ size = '90px', className, inline = false, ...props }) => 
 
     .logo span.neutral {
     }
-  `}</style>      
+  `}</style>
   </span>
 )

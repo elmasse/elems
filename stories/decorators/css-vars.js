@@ -1,5 +1,5 @@
 import React from 'react'
-import { color, number, text, boolean } from "@storybook/addon-knobs"
+import { color, number, text, boolean } from '@storybook/addon-knobs'
 
 import 'typeface-lato'
 import 'typeface-open-sans'
@@ -12,13 +12,13 @@ export const withCSSVars = (story) => {
   const overlayColor = color('Overlay Grid', '#e4e4e4', 'Rhythm')
 
   return (
-    <div className="story-with-css">
+    <div className='story-with-css'>
       <style jsx global>{`
         :root {
           --font-base: ${number('--font-base', 16, {}, 'Rhythm')}px;
           font-size: var(--font-base);
           --font-family-heading: ${text('--font-family-heading', 'Lato', 'Font')};
-          --font-family-body: ${text('--font-family-body','Open Sans', 'Font')};
+          --font-family-body: ${text('--font-family-body', 'Open Sans', 'Font')};
 
           --spacing: ${spacing}px;
 
@@ -39,13 +39,15 @@ export const withCSSVars = (story) => {
         body {
           margin: 0;
         }
-      `}</style>
+      `}
+      </style>
       <style jsx>{`
         div {
           display: flex;
           flex-direction: column;
         }
-      `}</style>
+      `}
+      </style>
       <OverlayGrid
         spacing={spacing}
         gridColor={overlayColor}

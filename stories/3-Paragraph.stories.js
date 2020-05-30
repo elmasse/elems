@@ -1,15 +1,14 @@
-import React from 'react';
-import { withKnobs } from "@storybook/addon-knobs";
+import React from 'react'
+import { withKnobs } from '@storybook/addon-knobs'
 
-
-import { withCSSVars, withPostLayout } from './decorators';
-import { Paragraph, Anchor, Code } from '../src';
+import { withCSSVars, withPostLayout } from './decorators'
+import { Paragraph, Anchor, Code } from '../src'
 
 export default {
   title: 'Paragraph',
   component: Paragraph,
   decorators: [withKnobs, withCSSVars, withPostLayout]
-};
+}
 
 export const Text = () => (
   <Paragraph>
@@ -20,7 +19,7 @@ export const Text = () => (
 export const Emoji = () => (
   <Paragraph>
     Lorem impsum dolor sit amet.
-    <span role="img" aria-label="so cool">
+    <span role='img' aria-label='so cool'>
       😀 😎 👍 💯
     </span>
   </Paragraph>

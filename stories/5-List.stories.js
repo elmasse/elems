@@ -1,14 +1,14 @@
-import React from 'react';
-import { withKnobs } from "@storybook/addon-knobs";
+import React from 'react'
+import { withKnobs } from '@storybook/addon-knobs'
 
 import { withCSSVars, withPostLayout } from './decorators'
-import { List, OrderedList, ListItem, Anchor } from '../src';
+import { List, OrderedList, ListItem, Anchor } from '../src'
 
 export default {
   title: 'Lists',
   component: Lists,
   decorators: [withKnobs, withCSSVars, withPostLayout]
-};
+}
 
 export const Lists = () => (
   <List>
@@ -42,6 +42,6 @@ export const OrderedLists = () => (
         <ListItem>Numbered Inset Item</ListItem>
         <ListItem>Numbered Inset Item</ListItem>
       </OrderedList>
-    </ListItem>    
+    </ListItem>
   </OrderedList>
 )

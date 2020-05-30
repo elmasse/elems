@@ -6,7 +6,7 @@ const color = 'color: var(--main-color);'
 
 // Base ratio
 // base line-height / base font-size
-// 
+//
 
 export const Heading1 = ({ children, ...props }) => {
   return (

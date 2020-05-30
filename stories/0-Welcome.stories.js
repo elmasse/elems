@@ -22,7 +22,7 @@ import {
   DL, DT, DD,
   Button,
   Preformatted, Pre
- } from '../src'
+} from '../src'
 
 import { Logo } from '../src/logo'
 
@@ -31,24 +31,24 @@ import { withCSSVars, withPostLayout } from './decorators'
 export default {
   title: 'Welcome',
   component: Welcome,
-  decorators: [withPostLayout,  withCSSVars, withKnobs]
-};
+  decorators: [withPostLayout, withCSSVars, withKnobs]
+}
 
 export const Welcome = () => (
   <div>
-    <Logo size="180px"/>
+    <Logo size='180px' />
     <Blockquote>
       <Paragraph>Components, not too many.</Paragraph>
     </Blockquote>
     <Heading1>Welcome</Heading1>
     <Paragraph>
       This is <Code>elems</Code>. A very small and opinionated set of React HTML elements for Blogs.
-      It is not a comprehensive set of UI components. Instead it is built for the need of styling simple 
-      components like when you are using a Markdown converter to render your posts. {" "}
+      It is not a comprehensive set of UI components. Instead it is built for the need of styling simple
+      components like when you are using a Markdown converter to render your posts. {' '}
       <Code>elems</Code> contains a few React components, such as: <Code>Paragraph</Code>, <Code>Heading</Code>, <Code>Code</Code>, <Code>Dividers</Code>, <Code>Image</Code> and a few more.
     </Paragraph>
   </div>
-);
+)
 
 export const Elements = () => (
   <div>
@@ -67,9 +67,10 @@ export const Elements = () => (
     <Divider />
     <P>
       Lorem <mark>ipsum</mark> dolor sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum
-          molestias</i> labore amet
+          molestias
+      </i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
-      molestiae quisquam. <a href="#">Voluptatibus, officiis laudantium?</a>
+      molestiae quisquam. <a href='#'>Voluptatibus, officiis laudantium?</a>
     </P>
     <P>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. <code>Hic culpa, nobis doloremque</code> veniam non,
@@ -97,14 +98,14 @@ export const Elements = () => (
       <DT>CSS</DT>
       <DD>A technology to make HTML look better</DD>
     </DL>
-    <Blockquote cite="https://en.wikiquote.org/wiki/Edward_Snowden">
+    <Blockquote cite='https://en.wikiquote.org/wiki/Edward_Snowden'>
       <P>If you think privacy is unimportant for you because you have nothing to hide, you might as well say free speech
       is unimportant for you because you have nothing useful to say.<br /><br />– Edward Snowden
       </P>
     </Blockquote>
-    <Img 
-      src="https://unsplash.com/photos/G-HRuwCTR7c/download"
-      alt="https://unsplash.com/@ryanquintal"
+    <Img
+      src='https://unsplash.com/photos/G-HRuwCTR7c/download'
+      alt='https://unsplash.com/@ryanquintal'
     />
     <Pre>{`
     <!DOCTYPE html>
@@ -120,6 +121,3 @@ export const Elements = () => (
     </Pre>
   </div>
 )
-
-
-

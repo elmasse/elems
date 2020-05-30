@@ -4,7 +4,7 @@ const reset = 'margin: 0;'
 
 // Base ratio
 // base line-height / base font-size
-// 
+//
 
 export const Paragraph = ({ children, ...props }) => {
   return (
@@ -27,4 +27,4 @@ export const Paragraph = ({ children, ...props }) => {
   )
 }
 
-export const P = Paragraph;
+export const P = Paragraph
