@@ -1,17 +1,18 @@
 import React from 'react'
 
-export const Logo = ({ size = '90px', className, inline = false, ...props }) => (
+export const Logo = ({ fontSize = '64px', className, inline = false, ...props }) => (
   <span className={[className, 'logo'].join(' ')} {...props}>
     <span className='color'>E</span><span className='color'>le</span><br />
     <span className='color'>M</span><span className='neutral'>ent</span><br />
     <span className='color'>S</span>
     <style jsx>{`
-    --size: calc(${size}/3);
+    --size: var(--logo-font-size, ${fontSize});
     .logo {
       display: ${inline ? 'inline-block' : 'block'};
       font-size: var(--size);
       font-family: 'Fira Code';
       letter-spacing: calc(var(--size) * .2);
+      line-height: 1.25;
     }
 
     .logo span.color {

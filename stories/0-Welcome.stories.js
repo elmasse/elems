@@ -36,7 +36,7 @@ export default {
 
 export const Welcome = () => (
   <div>
-    <Logo size='180px' />
+    <Logo fontSize='64px' />
     <Blockquote>
       <Paragraph>Components, not too many.</Paragraph>
     </Blockquote>
