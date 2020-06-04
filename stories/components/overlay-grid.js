@@ -15,10 +15,16 @@ export default ({ spacing, gridColor, show, children }) => {
         </defs>
         <rect width='100%' height='100%' fill='url(#grid)' />
       </svg>
-      {children}
+      <div className="content">
+        {children}
+      </div>
       <style jsx>{`
         div.root {
           position: relative;
+          pointer-events: none;
+        }
+        div.content {
+          pointer-events: auto;
         }
         
         svg {
