@@ -16,7 +16,7 @@ export const withCSSVars = (story) => {
       <style jsx global>{`
         :root {
           --base-font-size: ${number('--base-font-size', 16, {}, 'Rhythm')}px;
-          --base-line-height: ${number('--base-line-height', 1.5, {}, 'Rhythm')};
+          --base-line-height: ${text('--base-line-height', 'calc(32 / 18) ', 'Rhythm')};
           --font-family-heading: ${text('--font-family-heading', 'Lato', 'Font')};
           --font-family-body: ${text('--font-family-body', 'Open Sans', 'Font')};
 
