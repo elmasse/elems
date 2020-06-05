@@ -7,16 +7,19 @@ export const Hr = ({ ...props }) => {
       <style jsx>
         {`
         hr {
-          margin: 60px 0 40px 0;
+          margin: var(--hr-margin, calc(var(--spacing) * 6) 0 calc(var(--spacing) * 5) 0);
           border: none;    
         }
 
         hr:before {
-          content: var(--divider-content, "•••");
+          content: var(--hr-content, "•••");
           color: var(--main-color);
+          line-height: var(--base-line-height, 32px);
+          font-family: var(--font-family-body);
+          font-size: var(--hr-font-size, 1rem);
           text-align: center;
           display: block;
-          letter-spacing: var(--divider-letter-spacing, .6rem);
+          letter-spacing: var(--hr-letter-spacing, .6rem);
         }
       `}
       </style>
