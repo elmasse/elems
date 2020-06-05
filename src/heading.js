@@ -1,6 +1,5 @@
 import React from 'react'
 
-const reset = 'margin: 0;'
 const fontFamily = 'font-family: var(--font-family-heading);'
 const color = 'color: var(--main-color);'
 
@@ -15,13 +14,12 @@ export const Heading1 = ({ children, ...props }) => {
       <style jsx>
         {`
         h1 {
-          ${reset}
           ${fontFamily}
           ${color}
-          font-size: 4rem;
-          line-height: 6rem;
-          letter-spacing: -.088rem;
-          margin-left: calc(var(--spacing) * -0.3);
+          margin: var(--h1-margin, 0 0 calc(var(--spacing) * 2) 0);
+          font-size: var(--h1-font-size, 3rem);
+          line-height: var(--h1-line-height, 1);
+          letter-spacing: -.088rem;          
         }
       `}
       </style>
@@ -38,11 +36,12 @@ export const Heading2 = ({ children, ...props }) => {
       <style jsx>
         {`
         h2 {
-          ${reset}
           ${fontFamily}
           ${color}
-          font-size: 3rem;
-          line-height: 4.5rem;
+
+          margin: var(--h2-margin, 0 0 calc(var(--spacing) * 2) 0);
+          font-size: var(--h3-font-size, 2.5rem);
+          line-height: var(--h2-line-height, 1);
           letter-spacing: -.048rem;
         }
       `}
@@ -60,11 +59,11 @@ export const Heading3 = ({ children, ...props }) => {
       <style jsx>
         {`
         h3 {
-          ${reset}
           ${fontFamily}
           ${color}
-          font-size: 2rem;
-          line-height: 3rem;
+          margin: var(--h3-margin, 0 0 calc(var(--spacing) * 2) 0);
+          font-size: var(--h3-font-size, 2rem);
+          line-height: var(--h3-line-height, 1);          
           letter-spacing: -.036rem;
         }
       `}
@@ -82,10 +81,11 @@ export const Heading4 = ({ children, ...props }) => {
       <style jsx>
         {`
         h4 {
-          ${reset}
           ${fontFamily}
           ${color}
-          font-size: 1.8rem;
+          margin: var(--h4-margin, 0 0 calc(var(--spacing) * 1) 0);
+          font-size: var(--h4-font-size, 1.5rem);
+          line-height: var(--h4-line-height, 1);
           letter-spacing: -.03rem;
         }
       `}
@@ -103,10 +103,11 @@ export const Heading5 = ({ children, ...props }) => {
       <style jsx>
         {`
         h5 {
-          ${reset}
           ${fontFamily}
           ${color}
-          font-size: 1.3rem;
+          margin: var(--h5-margin, 0 0 calc(var(--spacing) * 1.5) 0);
+          font-size: var(--h5-font-size, 1.25rem);
+          line-height: var(--h5-line-height, 1);
         }
       `}
       </style>
@@ -123,10 +124,11 @@ export const Heading6 = ({ children, ...props }) => {
       <style jsx>
         {`
         h6 {
-          ${reset}
           ${fontFamily}
           ${color}
-          font-size: 1.1rem;
+          margin: var(--h6-margin, 0 0 calc(var(--spacing) * 1) 0);
+          font-size: var(--h6-font-size, 1rem);
+          line-height: var(--h6-line-height, 1);
         }
       `}
       </style>
