@@ -10,8 +10,8 @@ export const Preformatted = ({ children, border = false, ...props }) => {
           margin: var(--pre-margin, calc(var(--spacing) * 3) 0);
           padding: var(--pre-padding, calc(var(--spacing) * 2));
           overflow: auto;
-          line-height: var(--base-line-height, 32px);
-          font-size: var(--pre-font-size, 1em);
+          line-height: var(--pre-line-height, calc(1rem + var(--spacing)));
+          font-size: var(--pre-font-size, 1rem);
         }
 
         pre :global(code) {
