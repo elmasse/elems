@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Img = (props) => {
+export const Image = (props) => {
   return (
     <>
       <img {...props} />
@@ -19,4 +19,4 @@ export const Img = (props) => {
   )
 }
 
-export const Image = Img
+export const IMG = Image

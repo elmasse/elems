@@ -14,3 +14,5 @@ export const Mark = ({ children, ...props }) => {
     </mark>
   )
 }
+
+export const MARK = Mark

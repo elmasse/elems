@@ -17,4 +17,4 @@ export const Keyboard = ({ children, ...props }) => {
   )
 }
 
-export const Kbd = Keyboard
+export const KBD = Keyboard

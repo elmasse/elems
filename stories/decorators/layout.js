@@ -7,7 +7,9 @@ export const withPostLayout = (story) => (
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        max-width: 900px;
+        width: 100vw;
+        max-width: 55rem;
+        min-height: 100vh;
       }
     `}
     </style>

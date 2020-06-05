@@ -22,3 +22,5 @@ export const Blockquote = ({ children, ...props }) => {
     </blockquote>
   )
 }
+
+export const BLOCKQUOTE = Blockquote

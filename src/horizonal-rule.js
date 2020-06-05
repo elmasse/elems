@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Hr = ({ ...props }) => {
+export const HorizontalRule = ({ ...props }) => {
   return (
     <>
       <hr {...props} />
@@ -27,4 +27,4 @@ export const Hr = ({ ...props }) => {
   )
 }
 
-export const Divider = Hr
+export const HR = HorizontalRule

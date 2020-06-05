@@ -7,7 +7,7 @@ import { List, OrderedList, ListItem, Anchor } from '../src'
 export default {
   title: 'Lists',
   component: Lists,
-  decorators: [withKnobs, withCSSVars, withPostLayout]
+  decorators: [withPostLayout, withCSSVars, withKnobs]
 }
 
 export const Lists = () => (

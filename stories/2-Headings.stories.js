@@ -7,7 +7,7 @@ import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6 } from '../s
 export default {
   title: 'Headings',
   component: Headings,
-  decorators: [withKnobs, withCSSVars, withPostLayout]
+  decorators: [withPostLayout, withCSSVars, withKnobs]
 }
 
 export const Headings = () => (

@@ -23,4 +23,4 @@ export const Preformatted = ({ children, border = false, ...props }) => {
   )
 }
 
-export const Pre = Preformatted
+export const PRE = Preformatted

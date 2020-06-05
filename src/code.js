@@ -16,3 +16,5 @@ export const Code = ({ children, ...props }) => {
     </code>
   )
 }
+
+export const CODE = Code

@@ -11,18 +11,18 @@ import {
   Heading5, H5,
   Heading6, H6,
   Paragraph, P,
-  Blockquote,
+  Blockquote, BLOCKQUOTE,
   Anchor, A,
   Code,
-  Keyboard, Kbd,
+  Keyboard, KBD,
   Mark,
-  Divider, Hr,
-  Img,
+  HR,
+  IMG,
   List, UL,
   OrderedList, OL,
   ListItem, LI,
   DL, DT, DD,
-  Preformatted, Pre
+  Preformatted, PRE
 } from '../src'
 
 import { Logo } from '../src/logo'
@@ -89,7 +89,7 @@ export const Elements = () => (
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
       molestiae quisquam. <A href='#'>Voluptatibus, officiis laudantium?</A>
     </P>
-    <Hr />
+    <HR />
     <P>
       Lorem <Mark>ipsum</Mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
@@ -98,7 +98,7 @@ export const Elements = () => (
     <P>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. <Code>Hic culpa, nobis doloremque</Code> veniam non,
       nihil
-      cupiditate odit repellat est <Kbd>ALT + F4</Kbd> expedita facilis. Fuga aspernatur, alias debitis eveniet totam
+      cupiditate odit repellat est <KBD>ALT + F4</KBD> expedita facilis. Fuga aspernatur, alias debitis eveniet totam
       minima vel.
     </P>
     <UL>
@@ -121,16 +121,16 @@ export const Elements = () => (
       <DT>CSS</DT>
       <DD>A technology to make HTML look better</DD>
     </DL>
-    <Blockquote cite='https://en.wikiquote.org/wiki/Edward_Snowden'>
+    <BLOCKQUOTE cite='https://en.wikiquote.org/wiki/Edward_Snowden'>
       <P>If you think privacy is unimportant for you because you have nothing to hide, you might as well say free speech
       is unimportant for you because you have nothing useful to say.<br /><br />– Edward Snowden
       </P>
-    </Blockquote>
-    <Img
+    </BLOCKQUOTE>
+    <IMG
       src='https://unsplash.com/photos/G-HRuwCTR7c/download'
       alt='https://unsplash.com/@ryanquintal'
     />
-    <Pre>{`
+    <PRE>{`
     <!DOCTYPE html>
     <html>
       <head>
@@ -141,6 +141,6 @@ export const Elements = () => (
       </body>
     </html>
     `}
-    </Pre>
+    </PRE>
   </div>
 )

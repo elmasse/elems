@@ -2,19 +2,17 @@ import React from 'react'
 import { withKnobs } from '@storybook/addon-knobs'
 
 import { withCSSVars, withPostLayout } from './decorators'
-import { P, Anchor, Code } from '../src'
+import { P, Anchor, Code, Mark } from '../src'
 
 export default {
   title: 'Paragraph',
   component: Text,
-  decorators: [withKnobs, withCSSVars, withPostLayout]
+  decorators: [withPostLayout, withCSSVars, withKnobs]
 }
 
 export const Text = () => (
   <P>
-  Lorem <mark>ipsum</mark> dolor sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum
-      molestias
-  </i> labore amet
+  Lorem <Mark>ipsum</Mark> dolor sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
   possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
   molestiae quisquam. Voluptatibus, officiis laudantium?
   </P>

@@ -1,12 +1,12 @@
 import React from 'react'
 import { withKnobs } from '@storybook/addon-knobs'
 
-import { withCSSVars } from './decorators'
+import { withCSSVars, withPostLayout } from './decorators'
 
 export default {
   title: 'Colors',
   component: Colors,
-  decorators: [withKnobs, withCSSVars]
+  decorators: [withPostLayout, withCSSVars, withKnobs]
 }
 
 const shades = (tag) => Array.from(Array(10).keys()).map(i => `--${tag}${(i * 100) || 50}`)
