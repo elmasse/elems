@@ -3,6 +3,7 @@ import { color, number, text, boolean } from '@storybook/addon-knobs'
 
 import 'typeface-lato'
 import 'typeface-open-sans'
+import 'typeface-fira-code'
 
 import OverlayGrid from '../components/overlay-grid'
 
@@ -16,9 +17,10 @@ export const withCSSVars = (story) => {
       <style jsx global>{`
         :root {
           --base-font-size: ${number('--base-font-size', 16, {}, 'Rhythm')}px;
-          --base-line-height: ${text('--base-line-height', 'calc(32 / 18) ', 'Rhythm')};
+          --base-line-height: ${text('--base-line-height', 'calc(32 / 16) ', 'Rhythm')};
           --font-family-heading: ${text('--font-family-heading', 'Lato', 'Font')};
           --font-family-body: ${text('--font-family-body', 'Open Sans', 'Font')};
+          --font-family-monospace: ${text('--font-family-monospace', 'Fira Code', 'Font')};
 
           --spacing: ${spacing}px;
 

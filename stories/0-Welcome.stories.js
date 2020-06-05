@@ -54,57 +54,43 @@ export const Elements = () => (
   <div>
     <H1>Heading 1</H1>
     <P>
-      Lorem <mark>ipsum</mark> dolor sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum
-          molestias
-      </i> labore amet
+      Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
       molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
     </P>
     <H2>Heading 2</H2>
     <P>
-      Lorem <mark>ipsum</mark> dolor sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum
-          molestias
-      </i> labore amet
+      Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
       molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
     </P>
     <H3>Heading 3</H3>
     <P>
-      Lorem <mark>ipsum</mark> dolor sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum
-          molestias
-      </i> labore amet
+      Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
       molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
     </P>
     <H4>Heading 4</H4>
     <P>
-      Lorem <mark>ipsum</mark> dolor sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum
-          molestias
-      </i> labore amet
+      Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
       molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
     </P>
     <H5>Heading 5</H5>
     <P>
-      Lorem <mark>ipsum</mark> dolor sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum
-          molestias
-      </i> labore amet
+      Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
       molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
     </P>
     <H6>Heading 6</H6>
     <P>
-      Lorem <mark>ipsum</mark> dolor sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum
-          molestias
-      </i> labore amet
+      Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
       molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
     </P>
     <Divider />
     <P>
-      Lorem <mark>ipsum</mark> dolor sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum
-          molestias
-      </i> labore amet
+      Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
       molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
     </P>

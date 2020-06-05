@@ -23,6 +23,7 @@ export default ({ spacing, gridColor, show, children }) => {
           position: relative;
           pointer-events: none;
         }
+
         div.content {
           pointer-events: auto;
         }
@@ -31,14 +32,15 @@ export default ({ spacing, gridColor, show, children }) => {
           position: absolute;
           opacity: .8;
         }
-        // :global(h1),
-        // :global(h2),
-        // :global(h3),
-        // :global(h4),
-        // :global(h5),
-        // :global(h6) { background-color: rgba(0,0,255, .1); }
 
-        // :global(p) { background-color: rgba(0,0,0, .1); }
+        :global(h1),
+        :global(h2),
+        :global(h3),
+        :global(h4),
+        :global(h5),
+        :global(h6) { background-color: rgba(0,0,255, .1); }
+
+        :global(p) { background-color: rgba(0,0,0, .1); }
       `}</style>
     </div>
   ) : children
