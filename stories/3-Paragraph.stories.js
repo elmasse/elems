@@ -36,7 +36,7 @@ export const Anchors = () => (
 )
 
 export const CodeBlocks = () => (
-  <Paragraph>
+  <P>
     Lorem impsum dolor sit amet. <Code>This is a Code Block</Code>
-  </Paragraph>
+  </P>
 )

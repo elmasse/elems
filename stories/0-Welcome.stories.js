@@ -12,15 +12,15 @@ import {
   Heading6, H6,
   Paragraph, P,
   Blockquote,
-  Anchor,
+  Anchor, A,
   Code,
-  Divider,
+  Keyboard, Kbd,
+  Divider, Hr,
   Img,
   List, UL,
   OrderedList, OL,
   ListItem, LI,
   DL, DT, DD,
-  Button,
   Preformatted, Pre
 } from '../src'
 
@@ -56,48 +56,48 @@ export const Elements = () => (
     <P>
       Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
-      molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
+      molestiae quisquam. <A href='#'>Voluptatibus, officiis laudantium?</A>
     </P>
     <H2>Heading 2</H2>
     <P>
       Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
-      molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
+      molestiae quisquam. <A href='#'>Voluptatibus, officiis laudantium?</A>
     </P>
     <H3>Heading 3</H3>
     <P>
       Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
-      molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
+      molestiae quisquam. <A href='#'>Voluptatibus, officiis laudantium?</A>
     </P>
     <H4>Heading 4</H4>
     <P>
       Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
-      molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
+      molestiae quisquam. <A href='#'>Voluptatibus, officiis laudantium?</A>
     </P>
     <H5>Heading 5</H5>
     <P>
       Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
-      molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
+      molestiae quisquam. <A href='#'>Voluptatibus, officiis laudantium?</A>
     </P>
     <H6>Heading 6</H6>
     <P>
       Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
-      molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
+      molestiae quisquam. <A href='#'>Voluptatibus, officiis laudantium?</A>
     </P>
-    <Divider />
+    <Hr />
     <P>
       Lorem <mark>ipsum</mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
       possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
-      molestiae quisquam. <Anchor href='#'>Voluptatibus, officiis laudantium?</Anchor>
+      molestiae quisquam. <A href='#'>Voluptatibus, officiis laudantium?</A>
     </P>
     <P>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. <code>Hic culpa, nobis doloremque</code> veniam non,
       nihil
-      cupiditate odit repellat est <kbd>ALT + F4</kbd> expedita facilis. Fuga aspernatur, alias debitis eveniet totam
+      cupiditate odit repellat est <Kbd>ALT + F4</Kbd> expedita facilis. Fuga aspernatur, alias debitis eveniet totam
       minima vel.
     </P>
     <UL>
