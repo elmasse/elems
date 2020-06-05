@@ -7,13 +7,11 @@ export const Preformatted = ({ children, border = false, ...props }) => {
       <style jsx>
         {`
         pre {
-          margin: calc(var(--spacing) * 3) 0;
-          padding: calc(var(--spacing) * 2);
-          border: ${border ? '1px solid var(--main-color)' : '0px'};
-          ${!border && 'border-radius: 0px;'}
+          margin: var(--pre-margin, calc(var(--spacing) * 3) 0);
+          padding: var(--pre-padding, calc(var(--spacing) * 2));
           overflow: auto;
-          line-height: 1;
-          font-size: 1rem;
+          line-height: var(--base-line-height, 32px);
+          font-size: var(--pre-font-size, 1em);
         }
 
         pre :global(code) {
