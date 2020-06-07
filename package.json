@@ -1,6 +1,6 @@
 {
   "name": "elems",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "Elements as React Components, not too many.",
   "main": "index.js",
   "files": [
