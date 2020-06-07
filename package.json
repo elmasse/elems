@@ -6,7 +6,8 @@
   "files": [
     "dist",
     "index.js",
-    "logo.js"
+    "logo.js",
+    "renderers.js"
   ],
   "scripts": {
     "test": "jest",
