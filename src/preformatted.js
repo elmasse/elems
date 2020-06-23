@@ -13,10 +13,6 @@ export const Preformatted = ({ children, border = false, ...props }) => {
           line-height: var(--pre-line-height, calc(1rem + var(--spacing)));
           font-size: var(--pre-font-size, 1rem);
         }
-
-        pre :global(code) {
-          background-color: transparent;
-        }
       `}
       </style>
     </pre>

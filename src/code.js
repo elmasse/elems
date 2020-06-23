@@ -11,6 +11,11 @@ export const Code = ({ children, ...props }) => {
           background-color: var(--grey100);
           line-height: 1em; /* weird trick for monospace fonts to NOT add to height of container p */
         }
+
+        :global(pre) > code {
+          background-color: transparent;
+        }
+
       `}
       </style>
     </code>
