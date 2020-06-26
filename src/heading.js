@@ -40,7 +40,7 @@ export const Heading2 = ({ children, ...props }) => {
           ${color}
 
           margin: var(--h2-margin, 0 0 calc(var(--spacing) * 2) 0);
-          font-size: var(--h3-font-size, 2.5rem);
+          font-size: var(--h2-font-size, 2.5rem);
           line-height: var(--h2-line-height, 1);
           letter-spacing: -.048rem;
         }
