@@ -7,10 +7,10 @@ export const Blockquote = ({ children, ...props }) => {
       <style jsx>
         {`
         blockquote {
-          padding: calc(var(--spacing) * 2) 0;
+          padding: calc(var(--spacing) * 2);
           margin: calc(var(--spacing) * 3) 0;
-          padding-left: calc(var(--spacing) * 3);
           border-left: calc(var(--spacing) / 2) solid var(--grey500);
+          padding-left: calc(var(--spacing) * 3.5);
           background-color: var(--grey50);
         }
         
