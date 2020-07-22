@@ -7,11 +7,12 @@ export const Blockquote = ({ children, ...props }) => {
       <style jsx>
         {`
         blockquote {
-          padding: calc(var(--spacing) * 2);
           margin: calc(var(--spacing) * 3) 0;
-          border-left: calc(var(--spacing) / 2) solid var(--grey500);
+          padding: calc(var(--spacing) * 2);
           padding-left: calc(var(--spacing) * 3.5);
-          background-color: var(--grey50);
+          border-left: calc(var(--spacing) / 2) solid;
+          border-color: var(--blockquote-border-color, var(--action-color));
+          background-color: var(--blockquote-background-color);
         }
         
         blockquote :global(p:last-child) {

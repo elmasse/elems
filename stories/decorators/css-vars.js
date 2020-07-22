@@ -26,7 +26,9 @@ export const withCSSVars = (story) => {
 
           --main-color: ${color('--main-color', '#181818', 'Color')};
           --action-color: ${color('--action-color', '#f63', 'Color')};
+          --blockquote-border-color: ${color('--blockquote-border-color', '#f36', 'Color')};
           --hr-content: "${text('--hr-content', '•••', 'Misc')}";
+          
           --grey50: #fafafa;
           --grey100: #f0f0f0;
           --grey200: #e4e4e4;
