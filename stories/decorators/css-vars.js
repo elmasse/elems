@@ -5,15 +5,19 @@ import 'typeface-lato'
 import 'typeface-open-sans'
 import 'typeface-fira-code'
 
+import { CssBaseline } from '../../src/css-baseline'
+
 import OverlayGrid from '../components/overlay-grid'
 
 export const withCSSVars = (story) => {
+  const includeReset = boolean('CssBaseline', true, 'Rhythm')
   const overlayShow = boolean('Show Overlay', true, 'Rhythm')
   const overlayColor = color('Overlay Grid', '#e4e4e4', 'Rhythm')
   const spacing = number('--spacing', 8, {}, 'Rhythm')
 
   return (
     <div className='story-with-css'>
+      {includeReset && <CssBaseline />}
       <style jsx global>{`
         :root {
           --base-font-size: ${number('--base-font-size', 16, {}, 'Rhythm')}px;

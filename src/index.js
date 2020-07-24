@@ -10,3 +10,5 @@ export * from './list'
 export * from './mark'
 export * from './paragraph'
 export * from './preformatted'
+
+export * from './css-baseline'
