@@ -73,6 +73,7 @@ export const CssBaseline = () => {
           scroll-behavior: auto !important;
         }
       }    
-    `}</style>
+    `}
+    </style>
   )
 }
