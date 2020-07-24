@@ -1,6 +1,6 @@
 import React from 'react'
 
-// From https://hankchizljaw.com/wrote/a-modern-css-reset/
+// Based in https://hankchizljaw.com/wrote/a-modern-css-reset/
 
 export const CssBaseline = () => {
   return (
@@ -41,15 +41,9 @@ export const CssBaseline = () => {
         min-height: 100vh;
         scroll-behavior: smooth;
         text-rendering: optimizeSpeed;
-        line-height: 1.5;
+        // line-height: 1.5;
       }
-      
-      /* Remove list styles on ul, ol elements with a class attribute */
-      ul[class],
-      ol[class] {
-        list-style: none;
-      }
-      
+  
       /* A elements that don't have a class get default styles */
       a:not([class]) {
         text-decoration-skip-ink: auto;
@@ -60,12 +54,7 @@ export const CssBaseline = () => {
         max-width: 100%;
         display: block;
       }
-      
-      /* Natural flow and rhythm in articles by default */
-      article > * + * {
-        margin-top: 1em;
-      }
-      
+          
       /* Inherit fonts for inputs and buttons */
       input,
       button,
@@ -74,6 +63,7 @@ export const CssBaseline = () => {
         font: inherit;
       }
       
+
       /* Remove all animations and transitions for people that prefer not to see them */
       @media (prefers-reduced-motion: reduce) {
         * {
