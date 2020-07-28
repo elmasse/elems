@@ -2,7 +2,7 @@ import React from 'react'
 import { withKnobs } from '@storybook/addon-knobs'
 
 import { withCSSVars, withPostLayout } from './decorators'
-import { P, Anchor, Code, Mark } from '../src'
+import { P, Anchor, Code, Mark } from 'elems'
 
 export default {
   title: 'Paragraph',

@@ -1,82 +1,24 @@
 {
-  "name": "elems",
-  "version": "1.0.0-beta.7",
-  "description": "Elements as React Components, not too many.",
-  "main": "index.js",
-  "files": [
-    "dist",
-    "index.js",
-    "logo.js",
-    "renderers.js"
-  ],
+  "name": "elems-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
-    "test": "jest",
-    "build": "taskr",
-    "release": "taskr release",
-    "prepublish": "npm run release",
-    "lint": "standard 'src/**/*.js'",
-    "storybook": "start-storybook -p 6006 --ci",
-    "build-storybook": "build-storybook -c .storybook -o out",
-    "now-build": "npm run build-storybook",
-    "version": "chan release ${npm_package_version} && git add ."
+    "test": "lerna run test",
+    "storybook": "lerna run storybook --scope stories --stream"
   },
-  "dependencies": {},
-  "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "styled-jsx": "^3.0.0"
-  },
-  "devDependencies": {
-    "@babel/core": "7.9.0",
-    "@babel/plugin-proposal-class-properties": "7.8.3",
-    "@babel/plugin-proposal-object-rest-spread": "7.9.0",
-    "@babel/plugin-transform-runtime": "7.9.0",
-    "@babel/preset-env": "7.9.0",
-    "@babel/preset-react": "7.9.1",
-    "@babel/runtime": "7.9.0",
-    "@geut/chan": "^2.1.1",
-    "@storybook/addon-actions": "^5.3.18",
-    "@storybook/addon-knobs": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
-    "@storybook/react": "^5.3.18",
-    "@taskr/babel": "1.1.0-next.2",
-    "@taskr/clear": "1.1.0",
-    "@taskr/esnext": "1.1.0",
-    "@taskr/watch": "1.1.0",
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.8.0",
-    "babel-loader": "^8.1.0",
-    "eslint-config-standard": "^14.0.0",
-    "jest": "^24.8.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-test-renderer": "^16.13.1",
-    "standard": "^14.3.1",
-    "styled-jsx": "^3.2.5",
-    "taskr": "1.1.0",
-    "taskr-standard": "^1.2.0",
-    "typeface-fira-code": "^1.1.4",
-    "typeface-lato": "0.0.75",
-    "typeface-open-sans": "0.0.75"
-  },
-  "standard": {
-    "parser": "babel-eslint",
-    "ignore": [
-      "**/node_modules/**"
-    ]
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "roots": [
-      "test/"
-    ],
-    "testRegex": "(/^test/.*|\\.(test|spec))\\.(js)$"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmasse/elems.git"
   },
   "keywords": [],
-  "author": {
-    "name": "Maximiliano Fierro",
-    "email": "elmasse@gmail.com"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elmasse/elems/issues"
   },
-  "license": "ISC"
+  "homepage": "https://github.com/elmasse/elems#readme",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
 }

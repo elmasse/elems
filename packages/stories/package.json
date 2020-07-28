@@ -1,0 +1,37 @@
+{
+  "name": "stories",
+  "private": true,
+  "version": "1.0.0-beta.7",
+  "description": "",
+  "scripts": {
+    "storybook": "start-storybook -p 6006 --ci",
+    "build-storybook": "build-storybook -c .storybook -o out"
+  },
+  "dependencies": {
+    "elems": "1.0.0-beta.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-jsx": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "7.9.0",
+    "@babel/plugin-transform-runtime": "7.9.0",
+    "@babel/preset-env": "7.9.0",
+    "@babel/preset-react": "7.9.1",
+    "@babel/runtime": "7.9.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0",    
+    "typeface-fira-code": "^1.1.4",
+    "typeface-lato": "0.0.75",
+    "typeface-open-sans": "0.0.75"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
