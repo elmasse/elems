@@ -1,6 +1,6 @@
 {
   "name": "www",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.8",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "now-build": "npm run export"
   },
   "dependencies": {
-    "elems": "^1.0.0-beta.7",
+    "elems": "^1.0.0-beta.8",
     "next": "^9.5.0",
     "nextein": "^2.7.0",
     "react": "^16.13.1",
