@@ -6,5 +6,8 @@
         "use": "@now/static-build",
         "config": { "distDir": "out" }
       }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "packages/www/$1" }
     ]
   }
