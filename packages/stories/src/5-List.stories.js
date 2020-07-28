@@ -2,7 +2,7 @@ import React from 'react'
 import { withKnobs } from '@storybook/addon-knobs'
 
 import { withCSSVars, withPostLayout } from './decorators'
-import { List, OrderedList, ListItem, Anchor } from '../src'
+import { List, OrderedList, ListItem, Anchor } from 'elems'
 
 export default {
   title: 'Lists',

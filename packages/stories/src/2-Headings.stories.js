@@ -2,7 +2,7 @@ import React from 'react'
 import { withKnobs } from '@storybook/addon-knobs'
 
 import { withCSSVars, withPostLayout } from './decorators'
-import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6 } from '../src'
+import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6 } from 'elems'
 
 export default {
   title: 'Headings',

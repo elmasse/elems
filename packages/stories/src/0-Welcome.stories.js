@@ -23,9 +23,9 @@ import {
   ListItem, LI,
   DL, DT, DD,
   Preformatted, PRE
-} from '../src'
+} from 'elems'
 
-import { Logo } from '../src/logo'
+import { Logo } from 'elems/logo'
 
 import { withCSSVars, withPostLayout } from './decorators'
 
@@ -37,7 +37,7 @@ export default {
 
 export const Welcome = () => (
   <div>
-    <Logo fontSize='64px' />
+    <Logo width={200} />
     <Blockquote>
       <Paragraph>Components, not too many.</Paragraph>
     </Blockquote>

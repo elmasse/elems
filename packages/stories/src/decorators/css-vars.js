@@ -5,7 +5,7 @@ import 'typeface-lato'
 import 'typeface-open-sans'
 import 'typeface-fira-code'
 
-import { CssBaseline } from '../../src/css-baseline'
+import { CssBaseline } from 'elems'
 
 import OverlayGrid from '../components/overlay-grid'
 
