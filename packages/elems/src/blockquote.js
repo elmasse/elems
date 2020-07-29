@@ -16,7 +16,7 @@ export const Blockquote = ({ children, ...props }) => {
         }
         
         blockquote :global(p:last-child) {
-          margin-bottom: 0;
+          margin: 0;
         }
       `}
       </style>
