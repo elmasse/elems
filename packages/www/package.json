@@ -1,6 +1,6 @@
 {
   "name": "www",
-  "version": "1.0.0-beta.9",
+  "version": "1.0.0-beta.10",
   "private": true,
   "scripts": {
     "dev": "nextein",
@@ -8,7 +8,7 @@
     "now-build": "npm run export"
   },
   "dependencies": {
-    "elems": "^1.0.0-beta.9",
+    "elems": "^1.0.0-beta.10",
     "next": "^9.5.0",
     "nextein": "^2.7.0",
     "react": "^16.13.1",
