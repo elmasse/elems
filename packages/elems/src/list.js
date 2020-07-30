@@ -57,7 +57,7 @@ export const ListItem = ({ children, ...props }) => {
         {`
         li {
           margin: calc(var(--spacing) * 1);
-          font-size: 1rem;
+          font-size: var(--li-font-size, 1rem);
           line-height: var(--base-line-height, 32px);
         }
       `}
@@ -99,7 +99,7 @@ export const DescriptionTerm = ({ children, ...props }) => {
         {`
         dt {
           margin: calc(var(--spacing) * 1);
-          font-size: 1rem;
+          font-size: var(--dt-font-size, 1rem);
           line-height: var(--base-line-height, 32px);
         }
       `}
@@ -118,7 +118,7 @@ export const DescriptionDefinition = ({ children, ...props }) => {
         {`
         dd {
           margin: calc(var(--spacing) * 1);
-          font-size: 1rem;
+          font-size: var(--dd-font-size, 1rem);
           line-height: var(--base-line-height, 32px);
           padding: 0 0 0 1rem;
         }
