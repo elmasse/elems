@@ -8,6 +8,7 @@ export const Code = ({ children, ...props }) => {
         {`
         code {
           font-family: var(--font-family-monospace, monospace);
+          font-size: var(--code-font-size, .95em);
           background-color: var(--code-background-color);
           line-height: 1em; /* weird trick for monospace fonts to NOT add to height of container p */
         }
