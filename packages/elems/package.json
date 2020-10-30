@@ -13,13 +13,13 @@
     "test": "jest",
     "build": "taskr",
     "release": "taskr release",
-    "prepublish": "npm run release",
+    "prepublishOnly": "npm run release",
     "lint": "standard 'src/**/*.js'",
     "version": "chan release ${npm_package_version} && git add ."
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
+    "react": "^16.8.0 || ^17.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0",
     "styled-jsx": "^3.0.0"
   },
   "devDependencies": {
@@ -40,8 +40,8 @@
     "babel-loader": "^8.1.0",
     "eslint-config-standard": "^14.0.0",
     "jest": "^24.8.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
     "standard": "^14.3.1",
     "styled-jsx": "^3.2.5",
     "taskr": "1.1.0",
