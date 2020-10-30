@@ -1,14 +1,14 @@
 {
   "name": "stories",
   "private": true,
-  "version": "1.0.0-beta.11",
+  "version": "1.0.0-beta.12",
   "description": "",
   "scripts": {
     "storybook": "start-storybook -p 6006 --ci",
     "build-storybook": "build-storybook -c .storybook -o out"
   },
   "dependencies": {
-    "elems": "^1.0.0-beta.11",
+    "elems": "^1.0.0-beta.12",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-jsx": "^3.3.0"
