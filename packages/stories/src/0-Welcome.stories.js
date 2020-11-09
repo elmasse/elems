@@ -32,11 +32,11 @@ import { withCSSVars, withPostLayout } from './decorators'
 export default {
   title: 'Welcome',
   component: Welcome,
-  decorators: [withPostLayout, withCSSVars, withKnobs]
+  decorators: [withCSSVars, withPostLayout, withKnobs]
 }
 
-export const Welcome = () => (
-  <div>
+export const Welcome = ( ) => (
+  <>
     <Logo width={200} />
     <Blockquote>
       <Paragraph>Components, not too many.</Paragraph>
@@ -48,11 +48,11 @@ export const Welcome = () => (
       components like when you are using a Markdown converter to render your posts. {' '}
       <Code>elems</Code> contains a few React components, such as: <Code>Paragraph</Code>, <Code>Heading</Code>, <Code>Code</Code>, <Code>Dividers</Code>, <Code>Image</Code> and a few more.
     </Paragraph>
-  </div>
+  </>
 )
 
-export const Elements = () => (
-  <div>
+export const Elements = ({ className }) => (
+  <>
     <H1>Heading 1</H1>
     <P>
       Lorem <Mark>ipsum</Mark> <Code>dolor</Code> sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum molestias</i> labore amet
@@ -142,5 +142,5 @@ export const Elements = () => (
     </html>
     `}
     </PRE>
-  </div>
+  </>
 )

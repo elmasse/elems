@@ -10,8 +10,9 @@ import { CssBaseline } from 'elems'
 import OverlayGrid from '../components/overlay-grid'
 
 export const withCSSVars = (story) => {
-  const includeReset = boolean('CssBaseline', true, 'Rhythm')
-  const overlayShow = boolean('Show Overlay', true, 'Rhythm')
+  const includeReset = boolean('CssBaseline', false, 'Rhythm')
+  const overlayShow = boolean('Show Overlay', false, 'Rhythm')
+  const containerFlex = boolean('Container Flex', true, 'Rhythm')
   const overlayColor = color('Overlay Grid', '#e4e4e4', 'Rhythm')
   const spacing = number('--spacing', 8, {}, 'Rhythm')
 
@@ -52,10 +53,11 @@ export const withCSSVars = (story) => {
       `}
       </style>
       <style jsx>{`
-        div {
+        .flex {
           display: flex;
           flex-direction: column;
         }
+
       `}
       </style>
       <OverlayGrid
@@ -63,7 +65,7 @@ export const withCSSVars = (story) => {
         gridColor={overlayColor}
         show={overlayShow}
       >
-        {story()}
+        <div className={containerFlex ? "flex" : ""}>{story()}</div>
       </OverlayGrid>
     </div>
   )
