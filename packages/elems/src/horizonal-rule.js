@@ -7,7 +7,7 @@ export const HorizontalRule = ({ ...props }) => {
       <style jsx>
         {`
         hr {
-          margin: var(--hr-margin, calc(var(--spacing) * 6) 0 calc(var(--spacing) * 5) 0);
+          margin: var(--hr-margin, 0 0 calc(var(--spacing) * 2) 0);
           border: none;    
         }
 

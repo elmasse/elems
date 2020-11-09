@@ -7,7 +7,7 @@ export const List = ({ children, ...props }) => {
       <style jsx>{`
         ul {
           font-family: var(--font-family-body);
-          margin: calc(var(--spacing) * 2) 0;
+          margin: var(--ul-margin, 0 0 calc(var(--spacing) * 2) 0);
           padding: 0 0 0 2.5rem;
         }
 
@@ -31,7 +31,7 @@ export const OrderedList = ({ children, ...props }) => {
       <style jsx>
         {`
         ol {
-          margin: calc(var(--spacing) * 2) 0;
+          margin: var(--ol-margin, 0 0 calc(var(--spacing) * 2) 0);
           font-family: var(--font-family-body);
           padding: 0 0 0 2.5rem;
         }
@@ -56,7 +56,7 @@ export const ListItem = ({ children, ...props }) => {
       <style jsx>
         {`
         li {
-          margin: calc(var(--spacing) * 1);
+          margin: var(--li-margin, var(--spacing));
           font-size: var(--li-font-size, 1rem);
           line-height: var(--base-line-height, 32px);
         }
@@ -75,7 +75,7 @@ export const DescriptionList = ({ children, ...props }) => {
       <style jsx>{`
         dl {
           font-family: var(--font-family-body);
-          margin: calc(var(--spacing) * 2) 0;
+          margin: var(--dl-margin, 0 0 calc(var(--spacing) * 2) 0);
         }
 
         dl :global(ul),
@@ -98,7 +98,7 @@ export const DescriptionTerm = ({ children, ...props }) => {
       <style jsx>
         {`
         dt {
-          margin: calc(var(--spacing) * 1);
+          margin: var(--dt-margin, var(--spacing));
           font-size: var(--dt-font-size, 1rem);
           line-height: var(--base-line-height, 32px);
         }
@@ -117,7 +117,7 @@ export const DescriptionDefinition = ({ children, ...props }) => {
       <style jsx>
         {`
         dd {
-          margin: calc(var(--spacing) * 1);
+          margin: var(--dd-margin, var(--spacing));
           font-size: var(--dd-font-size, 1rem);
           line-height: var(--base-line-height, 32px);
           padding: 0 0 0 1rem;
