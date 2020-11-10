@@ -13,6 +13,7 @@ export const Blockquote = ({ children, ...props }) => {
           border-left: calc(var(--spacing) / 2) solid;
           border-color: var(--blockquote-border-color, var(--action-color));
           background-color: var(--blockquote-background-color);
+          color: var(--blockquote-color, var(--main-color));
         }
         
         blockquote :global(p:last-child) {

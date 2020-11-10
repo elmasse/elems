@@ -6,9 +6,10 @@ export const List = ({ children, ...props }) => {
       {children}
       <style jsx>{`
         ul {
-          font-family: var(--font-family-body);
           margin: var(--ul-margin, 0 0 calc(var(--spacing) * 2) 0);
           padding: 0 0 0 2.5rem;
+          font-family: var(--font-family-body);
+          color: var(--ul-color, var(--main-color));
         }
 
         ul :global(ul),
@@ -32,8 +33,9 @@ export const OrderedList = ({ children, ...props }) => {
         {`
         ol {
           margin: var(--ol-margin, 0 0 calc(var(--spacing) * 2) 0);
-          font-family: var(--font-family-body);
           padding: 0 0 0 2.5rem;
+          font-family: var(--font-family-body);
+          color: var(--ol-color, var(--main-color));
         }
 
         ol :global(ul),
@@ -74,8 +76,10 @@ export const DescriptionList = ({ children, ...props }) => {
       {children}
       <style jsx>{`
         dl {
-          font-family: var(--font-family-body);
           margin: var(--dl-margin, 0 0 calc(var(--spacing) * 2) 0);
+          font-family: var(--font-family-body);
+          color: var(--dl-color, var(--main-color));
+
         }
 
         dl :global(ul),

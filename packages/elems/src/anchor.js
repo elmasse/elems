@@ -9,7 +9,7 @@ export class Anchor extends Component {
         <style jsx>
           {`
           a {
-            color: var(--action-color);
+            color: var(--anchor-color, var(--action-color));
           }
         `}
         </style>
