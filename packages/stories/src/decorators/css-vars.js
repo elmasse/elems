@@ -10,8 +10,8 @@ import { CssBaseline } from 'elems'
 import OverlayGrid from '../components/overlay-grid'
 
 export const withCSSVars = (story) => {
-  const includeReset = boolean('CssBaseline', false, 'Rhythm')
   const overlayShow = boolean('Show Overlay', false, 'Rhythm')
+  const includeReset = boolean('CssBaseline', true, 'Rhythm')
   const containerFlex = boolean('Container Flex', true, 'Rhythm')
   const overlayColor = color('Overlay Grid', '#e4e4e4', 'Rhythm')
   const spacing = number('--spacing', 8, {}, 'Rhythm')
